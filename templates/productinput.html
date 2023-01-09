@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="gray">
+    <form action="./insert/" method="post">
+        {% csrf_token %}
+        <center>
+            <table bgcolor="#00ffff">
+                <tr>
+                    <td>Enter Pid:</td>
+                    <td><input type="text" name="t1"></td>
+                </tr>
+                <tr>
+                    <td>Enter pname:</td>
+                    <td><input type="text" name="t2"></td>
+                </tr>
+                <tr>
+                    <td>Enter pcost:</td>
+                    <td><input type="text" name="t3"></td>
+                </tr>
+                <tr>
+                    <td>Enter pmfdt:</td>
+                    <td><input type="text" name="t4"></td>
+                </tr>
+                <tr>
+                    <td>Enter pexpdt:</td>
+                    <td><input type="text" name="t5"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="insert" >
+                    </td>
+                </tr>
+
+            </table>
+        </center>
+
+    </form>
+
+</body>
+</html>
